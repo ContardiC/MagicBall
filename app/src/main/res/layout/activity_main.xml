@@ -6,4 +6,54 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    />
+    >
+
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/content_description_background"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:src="@tools:sample/avatars"
+        tools:srcCompat="@drawable/background" />
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewAsk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_ask_me_anything"
+            android:textSize="@dimen/label_dimension"
+            android:textColor="@color/white"
+        />
+
+        <ImageView
+            android:id="@+id/imageViewBall"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@tools:sample/avatars"
+            android:translationY="50dp"
+            app:srcCompat="@drawable/ball1" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/button_left_margin"
+            android:text="@string/label_button_ask" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
