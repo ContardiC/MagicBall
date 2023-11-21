@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "it.spacecoding.magicball"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "it.spacecoding.magicball"
